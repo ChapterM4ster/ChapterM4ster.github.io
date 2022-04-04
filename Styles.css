@@ -46,3 +46,21 @@ body {
 
     font-size: 25px;
 }
+
+.eng-text {
+
+    width: 500px;
+    border-style: inset;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: darkgray;
+
+    font-size: 27px;
+}
+
+.cv 
+{
+ width: 163%;
+ position: relative;
+ left: -225px;
+}
