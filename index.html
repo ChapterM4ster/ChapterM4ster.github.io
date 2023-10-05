@@ -57,7 +57,7 @@
     <p class="text"> rick.poell@gmail.com </p>
     <p class="text">r.poell@sintlucasedu.NL </p>
 
-    <div id = "cookiePopup">
+    <div id = "cookiePopup" class="hide">
       <p>
         This site uses cookies to provide your browsing experience and relevant information.
         Before continuing to use our website, you agree & accept of our <a href="#">Cookie Policy & Privacy.</a> 
@@ -108,6 +108,13 @@
       }
 
     };
+
+    window.onload = () => {
+      setTimeout(() => {
+        checkCookie();
+      }, 2000);
+
+    }
 
 
     document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');

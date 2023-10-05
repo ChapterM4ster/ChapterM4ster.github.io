@@ -119,3 +119,19 @@ body {
     bottom: 2em;
     right: 2em;
 }
+
+@media only screen and (max-width: 37.5em){
+    #cookiePopup{
+        width: 100%;
+    }
+
+    .hide{
+        bottom: 2em;
+        right: 0;
+    }
+
+    .show{
+        right: 0;
+        bottom: 0;
+    }
+}
