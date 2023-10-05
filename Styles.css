@@ -75,3 +75,47 @@ body {
 .pong {
     width: 100%;
 }
+
+#cookiePopup{
+    background-color: azure;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+}
+
+#cookiePopup p {
+    text-align: center;
+    margin: 1.4em 0;
+}
+
+#cookiePopup button {
+    background-color: blue;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.hide{
+    visibility: hidden;
+    bottom: 2em;
+    right: 2em;
+}
+
+.show{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}

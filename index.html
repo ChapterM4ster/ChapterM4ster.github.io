@@ -59,6 +59,12 @@
 
   </center>
 
+  div id = "cookiePopup">
+    <p>
+      This site uses cookies to provide your browsing experience and relevant information.
+      Before continuing to use our website, you agree & accept of our <a href="#"></a> Cookie Policy & Privacy.
+    </p>
+    <button id="acceptCookie">Accept</button>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -72,6 +78,20 @@
   <script>
     var siteWidth = 1280;
     var scale = screen.width / siteWidth;
+    let popUp = document.getElementById("cookiePopup");
+    document.getElementById("acceptCookie");
+    addEventListener("click", () =>  {
+
+        let d = new Date();
+
+        d.setMinutes(2 + d.getMinutes());
+
+        document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+
+        popUp.classList.add("hide");
+        popUp.classList.remove("show");
+    });
+
 
     document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');
   </script>
